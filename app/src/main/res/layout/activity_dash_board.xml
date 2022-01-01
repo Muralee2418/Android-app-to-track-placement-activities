@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muralli.lifecycle.DashBoard"
+    android:background="@color/dashcolor">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:id="@+id/dashtoolbar"
+
+            android:background="@color/colorPrimary">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Welcome"/>
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/yr"
+                android:background="@color/TxtClr"
+                android:gravity="right|end"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usrmng"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"
+                android:src="@mipmap/usrmng"/>
+
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ProgressBar
+                android:id="@+id/circularProgressBar"
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="180dip"
+            android:layout_height="180dip"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+                android:elevation="10dp"
+            android:progressDrawable="@drawable/progressbar" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/placcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textSize="30dp"
+                    android:textColor="@color/purewhite"/>
+                <TextView
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Placement Count"
+                    android:textColor="@color/purewhite"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+            <ProgressBar
+                android:id="@+id/circularProgressBar1"
+                android:layout_centerInParent="true"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="180dip"
+                android:layout_height="180dip"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progressbar" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/placperc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center"
+                    android:textSize="30dp"
+                    android:textColor="@color/purewhite"/>
+                    <TextView
+                        android:id="@+id/perc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:layout_gravity="center"
+                        android:textSize="30dp"
+                        android:textColor="@color/purewhite"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Placement Percentage"
+                    android:textColor="@color/purewhite"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+            <TableRow
+                android:padding="10dp"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                <ImageView android:layout_height="100dp"
+                    android:id="@+id/indcontact"
+                    android:layout_width="100dp"
+                    android:padding="20dp"
+                    android:src="@drawable/contfin"
+                    android:tint="@color/TxtClr"
+                    android:clickable="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Industry Contacts"
+                    android:gravity="center"
+                    android:textColor="@color/purewhite"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <ImageView android:layout_height="100dp"
+                        android:layout_width="100dp"
+                        android:padding="20dp"
+                        android:tint="@color/TxtClr"
+                        android:id="@+id/placementstatis"
+                        android:clickable="true"
+                        android:src="@drawable/barfin"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Placement Statistics"
+                        android:textColor="@color/purewhite"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <ImageView android:layout_height="100dp"
+                        android:layout_width="100dp"
+                        android:padding="20dp"
+                        android:id="@+id/internship"
+                        android:clickable="true"
+                        android:tint="@color/TxtClr"
+                        android:src="@drawable/todo"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tasks to do"
+                        android:textColor="@color/purewhite"/>
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:padding="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <ImageView android:layout_height="100dp"
+                        android:id="@+id/studentskillmatrix"
+                        android:layout_width="100dp"
+                        android:padding="20dp"
+                        android:tint="@color/TxtClr"
+                        android:src="@drawable/skillfin"
+                        android:clickable="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Students SkillMatrix"
+                        android:gravity="center"
+                        android:textColor="@color/purewhite"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <ImageView android:layout_height="100dp"
+                        android:id="@+id/imgvureport"
+                        android:layout_width="100dp"
+                        android:padding="20dp"
+                        android:clickable="true"
+                        android:tint="@color/TxtClr"
+                        android:src="@drawable/trainfin"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/txtvureport"
+                        android:text="Report Genration"
+                        android:textColor="@color/purewhite"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <ImageView android:layout_height="100dp"
+                        android:id="@+id/logout"
+                        android:layout_width="100dp"
+                        android:padding="25dp"
+                        android:clickable="true"
+                        android:tint="@color/TxtClr"
+                        android:src="@drawable/logoutfin"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Exit"
+                        android:textColor="@color/purewhite"/>
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_gravity="center">
+
+            </TableRow>
+
+        </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/TxtClr"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="Powered By:MCET/CSE"/>
+
+
+
+
+
+
+    </LinearLayout>
+    </RelativeLayout>

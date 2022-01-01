@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dashcolor"
+    tools:context="com.example.muralli.lifecycle.Taskstodo.AddDrive">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical"
+        android:background="@color/dashcolor">
+        <EditText
+            android:id="@+id/adddrive_company"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="Name of the Company"
+            android:textColorHint="@color/TxtClr"
+            android:textColor="@color/TxtClr"/>
+        <EditText
+            android:id="@+id/adddrive_dt"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="Drive date"
+            android:textColorHint="@color/TxtClr"
+            android:textColor="@color/TxtClr"
+            android:focusable="false"/>
+        <EditText
+            android:id="@+id/adddrive_salary"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="salary"
+            android:inputType="number"
+            android:textColorHint="@color/TxtClr"
+            android:textColor="@color/TxtClr"/>
+
+
+        <Button
+            android:id="@+id/adddrive_addbutn"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/TxtClr"
+            android:text="Add"
+            android:textColor="@color/dashcolor"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

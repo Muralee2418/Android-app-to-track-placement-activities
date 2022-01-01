@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cardview_dark_background">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_above="@+id/LnrLayoutLogin"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSE Placement"
+            android:textSize="35dp"
+            android:id="@+id/title1"
+            android:elegantTextHeight="true"
+            android:textColor="@color/TxtClr"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcomes you"
+            android:textSize="15dp"
+            android:textColor="#fff"/>
+        <ProgressBar
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:id="@+id/pbar"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/LnrLayoutLogin"
+        android:orientation="vertical"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center"
+        android:padding="10dp">
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email-Id"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:textColor="@color/TxtClr"
+            android:inputType="textPassword"
+            android:textColorHint="@color/TxtClr"/>
+    <TextView
+        android:id="@+id/forgotpw"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Forgot Password? Click Here"
+       android:linksClickable="true"
+        android:textStyle="italic"
+        android:textColor="@color/TxtClr"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/dropdownbtn"
+            android:text="@string/Login_Button"
+            android:textColor="@color/purewhite"/>
+        <TextView
+            android:id="@+id/Registartion"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="New User? Register Here"
+            android:linksClickable="true"
+            android:textStyle="italic"
+            android:textColor="@color/TxtClr"/>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/loginProgress"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/strtservice"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/purewhite"
+            android:text="Start Service"
+            android:visibility="gone"
+            android:textColor="@color/dashcolor"/>
+            <Button
+                android:id="@+id/stopservice"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:background="@color/purewhite"
+                android:text="Stop Service"
+                android:textColor="@color/dashcolor"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

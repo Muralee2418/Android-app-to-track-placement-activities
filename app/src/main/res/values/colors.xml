@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e1b814</color>
+    <color name="colorPrimaryDark">#9b7f0d</color>
+    <color name="colorAccent">#38c5fd</color>
+    <color name="TxtClr">#d1f1c30a</color>
+    <color name="White">#fcf128</color>
+    <color name="dashcolor">#5b6676</color>
+    <color name="iconcolor">#55efc4</color>
+    <color name="purewhite">#fff</color>
+    <color name="cardview">#04be76</color>
+    <color name="redish">#55efc4</color>
+    <color name="yellow">#6b6c6b</color>
+    <color name="grey">#C8F7C5</color>
+    <color name="red">#fa5252</color>
+    <color name="linedefault">#3d3b3b</color>
+
+</resources>

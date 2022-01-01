@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_alignParentTop="true"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:elevation="8dp"
+        android:paddingBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/dashcolor">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/drivecompany"
+                android:text="Task Type"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:background="@color/dashcolor"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TxtClr"
+                    android:layout_marginRight="5dp"
+                    android:text="Task Date:"
+                    android:textSize="15dp"/>
+
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TxtClr"
+                    android:id="@+id/drivedate"
+                    android:text="03-03-2018"
+                    android:textSize="10dp"
+                    android:gravity="center"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/dredit"
+                    android:id="@+id/bt_drive_edit"
+
+                    android:textColor="@color/dashcolor"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="100dp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/bt_drive_del"
+                    android:src="@mipmap/drvdel"
+                    android:alpha="50"
+                    android:visibility="gone"
+
+
+                    android:textColor="@color/dashcolor"
+                    android:textSize="10dp"
+
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="300dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+
+                android:background="@color/TxtClr"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TxtClr"
+                    android:layout_marginRight="5dp"
+                    android:text="status"
+                    android:textSize="15dp"
+                    />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TxtClr"
+                    android:layout_marginRight="5dp"
+                    android:text="List sent"
+                    android:textSize="13dp"
+                    android:layout_marginEnd="30dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TxtClr"
+                    android:id="@+id/countcardview"
+                    android:text="Informed"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="45dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TxtClr"
+                    android:layout_marginEnd="40dp"
+                    android:text="Drive"
+                    android:textSize="13dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TxtClr"
+                    android:layout_marginEnd="0dp"
+                    android:text="Results"
+                    android:textSize="13dp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+
+                android:paddingTop="3dp"
+                android:paddingBottom="5dp">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imgtsk_list"
+                    android:clickable="true"
+                    android:src="@mipmap/taskyes"/>
+              <View
+                  android:layout_width="60dp"
+                  android:layout_height="2dp"
+                  android:id="@+id/lis_info"
+                  android:clickable="false"
+                  android:background="@color/TxtClr"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/taskyes"
+                    android:clickable="true"
+                    android:id="@+id/imgtsk_info"/>
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="2dp"
+                    android:id="@+id/info_driv"
+                    android:clickable="false"
+                    android:background="@color/linedefault"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/imgtsk_drive"
+                    android:clickable="true"
+                    android:src="@mipmap/tasknot"/>
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="2dp"
+                    android:id="@+id/driv_res"
+                    android:clickable="false"
+                    android:background="@color/linedefault"/>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/tasknot"
+                    android:clickable="true"
+                    android:id="@+id/imgtsk_result"/>
+                </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

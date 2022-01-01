@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.muralli.lifecycle">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Placement" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="Registration"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".Main22Activity" >
+        </activity>
+        <activity
+            android:name=".IndustryContacts"
+            android:label="Add Contact" >
+        </activity>
+        <activity
+            android:name=".Contact_List"
+            android:label="Industry Contacts" >
+        </activity>
+        <activity
+            android:name=".ContactPage"
+            android:label="Industry Contacts"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".EditContact"
+            android:label="Edit Contact" >
+        </activity>
+        <activity
+            android:name=".DashBoard"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".StudentDetails.StudentInfo"
+            android:label="Students List" >
+        </activity>
+        <activity android:name=".StudentFullDetails" >
+        </activity>
+        <activity
+            android:name=".StudentDetails.StudentProfile"
+            android:label="@string/title_activity_student_profile"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".StudentEdit"
+            android:label="@string/title_activity_student_profile"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".DB.DB_Sample" >
+        </activity>
+        <activity
+            android:name=".PlacementStatistics.PlacementStatis"
+            android:label="@string/title_activity_placement_statis"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".Reports.ReportGenrate" >
+        </activity>
+        <activity
+            android:name=".Taskstodo.PlacementTasks"
+            android:label="@string/title_activity_placement_tasks"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Taskstodo.AddDrive"
+            android:label="Add Drive" >
+        </activity>
+        <activity
+            android:name=".ReportGenration.ReportGenrator"
+            android:label="@string/title_activity_report_genrator"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Main24Activity"
+            android:label="@string/title_activity_main24"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Sample.SampleActivity"
+            android:label="@string/title_activity_sample"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".Sample.Main3Activity" >
+        </activity>
+        <activity android:name=".SampleProfile" >
+        </activity>
+        <activity
+            android:name=".Sample.Main4Activity"
+            android:label="@string/title_activity_main4"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".Sample.Custbtn" >
+        </activity>
+        <activity android:name=".Sample.TwitterSearchActivity" >
+        </activity>
+        <activity
+            android:name=".StudentDetails.Participant"
+            android:label="@string/title_activity_participant"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".Taskstodo.DriveInfo" >
+        </activity>
+        <activity
+            android:name=".AlrmServiceDemo"
+            android:label="@string/title_activity_alrm_service_demo"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".AlrmServiceSample" >
+        </activity>
+
+        <receiver
+            android:name=".MyAlaram"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".User.UserManagement"
+            android:label="@string/title_activity_user_management"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Taskstodo.EditDriveDetails"
+            android:label="Edit Drive" >
+        </activity>
+        <activity
+            android:name=".Taskstodo.AddTask"
+            android:label="Add Task">
+        </activity>
+        <activity android:name=".Taskstodo.EditTask"
+            android:label="Edit Task" >
+        </activity>
+    </application>
+
+</manifest>

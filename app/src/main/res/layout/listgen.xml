@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@color/dashcolor"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Genrate List"
+        android:textColor="@color/TxtClr"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="choose the required field tap the genrate button"
+        android:textColor="@color/TxtClr"
+        android:layout_marginBottom="20dp"
+        android:textSize="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dropdownbtn"
+        android:clickable="true"
+        android:id="@+id/dropdownbtn">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose the Field"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/down"
+            android:id="@+id/iv_down"
+            android:rotation="90"/>
+       </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="10dp"
+        android:id="@+id/fields"
+        android:visibility="gone">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+      <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenname"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Name"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenroll"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Roll"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenx"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Xth"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenxii"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="XIIth"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgendip"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Diplamo"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenemail"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Email"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenphone"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Phone"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenhis"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="History"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenarear"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="arear"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgengender"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Gender"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenug"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="UG"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp">
+
+        </View>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/TxtClr"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dropdownbtn"
+        android:clickable="true"
+        android:id="@+id/dropdownbtncatgry">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Category"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/down"
+                android:id="@+id/iv_down2"
+                android:rotation="90"/>
+        </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="5dp"
+        android:id="@+id/categorylist"
+        android:visibility="gone">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:id="@+id/willingnotwilling"
+        android:textColor="@color/TxtClr"
+        android:textColorHint="@color/TxtClr"
+        android:layout_marginTop="20dp"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/LnrLayouteligible"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listgenwilling"
+                android:textColor="@color/TxtClr"
+                android:textColorHint="@color/TxtClr"
+                android:text="Willing"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listgennotwilling"
+                android:textColor="@color/TxtClr"
+                android:textColorHint="@color/TxtClr"
+                android:text="Not Willing"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lnrlayoutplaced"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/LnrLayoutnotplaced"
+                android:textColor="@color/TxtClr"
+                android:textColorHint="@color/TxtClr">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgennotplac"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Not Placed"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listgenhavearear"
+                    android:textColor="@color/TxtClr"
+                    android:textColorHint="@color/TxtClr"
+                    android:visibility="gone"
+                    android:text="Exclude Not Eligible"/>
+             </LinearLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenplac"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Placed"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listgenintern"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:text="Gone for Intern"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/LnrLayout"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listgenCompany"
+                android:textColor="@color/TxtClr"
+                android:textColorHint="@color/TxtClr"
+                android:text="Company"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listgensal"
+                android:textColor="@color/TxtClr"
+                android:textColorHint="@color/TxtClr"
+                android:text="Salary"/>
+           </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+
+      <Button
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:id="@+id/listgenbtn"
+          android:background="@drawable/dropdownbtn"
+          android:text="Genrate List"
+          android:padding="4dp"
+          android:textColor="@color/dashcolor"
+          android:layout_gravity="center"
+          android:layout_marginTop="30dp"/>
+
+
+
+
+
+
+
+</LinearLayout>

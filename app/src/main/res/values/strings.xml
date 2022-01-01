@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">LifeCycle</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="Login_Button">Login</string>
+    <array name="company">
+        <item>infosys</item>
+        <item>nttdata</item>
+        <item>polaris</item>
+    </array>
+    <string name="title_activity_contact_page">ContactPage</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fragment_container">FragmentContainer</string>
+    <string name="title_activity_student_profile">StudentProfile</string>
+    <string name="department">CSE</string>
+    <array name="Status">
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+
+    <string-array name="year">
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+    <string name="title_activity_placement_statis">PlacementStatis</string>
+    <string name="title_activity_placement_tasks">PlacementTasks</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_report_genrator">ReportGenrator</string>
+    <string name="title_activity_main24">Main24Activity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_login_form">LoginForm</string>
+    <string name="title_activity_sample">SampleActivity</string>
+    <string name="year">2018</string>
+    <string name="title_activity_main4">Main4Activity</string>
+    <string name="title_activity_participant">Participant</string>
+    <string name="title_activity_alrm_service_demo">AlrmServiceDemo</string>
+    <string name="title_activity_user_management">UserManagement</string>
+    <string name="title_activity_add_task">AddTask</string>
+</resources>

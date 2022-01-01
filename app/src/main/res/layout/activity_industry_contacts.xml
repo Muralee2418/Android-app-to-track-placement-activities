@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muralli.lifecycle.IndustryContacts">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical"
+        android:background="@color/dashcolor">
+        <EditText
+            android:id="@+id/expert_name"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:hint="Name of the person"/>
+        <EditText
+            android:id="@+id/contact_no"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:hint="Contact No"/>
+        <EditText
+            android:id="@+id/company_name"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"
+            android:hint="Company Name"/>
+        <Button
+            android:id="@+id/contact_sumbmit"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/TxtClr"
+            android:text="Submit"
+            android:textColor="@color/dashcolor"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.example.muralli.lifecycle.DashBoard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/ring"
+            android:elevation="8dp"
+            app:cardElevation="9dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Placement Statistics"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:background="@color/yellow"
+                    android:textColor="@color/TxtClr"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:background="@color/TxtClr">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/TxtClr">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="No of Students placed"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:textColor="@color/dashcolor"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/p_statuscount"
+                        android:text="611"
+                        android:layout_gravity="center"
+                        android:textSize="35dp"
+                        android:textColor="@color/dashcolor"
+                        />
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="Total No of students"
+                        android:textSize="12dp"
+                        android:textColor="@color/dashcolor"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="611"
+                        android:id="@+id/p_statusenrolled"
+                        android:layout_gravity="center"
+                        android:textSize="25dp"
+                        android:textColor="@color/dashcolor"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@color/TxtClr">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Placement Percentage"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:textColor="@color/dashcolor"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:id="@+id/p_statuspercent"
+                        android:layout_gravity="center"
+                        android:textSize="30dp"
+                        android:textColor="@color/dashcolor"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:layout_gravity="center"
+                        android:textSize="30dp"
+                        android:textColor="@color/dashcolor"
+                        />
+                    <TextView
+                        android:layout_marginLeft="18dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="Yet to be Placed"
+                        android:textSize="12dp"
+                        android:textColor="@color/dashcolor"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:text="611"
+                        android:id="@+id/p_statusyetto"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:textColor="@color/dashcolor"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average Salary:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/p_statusavgsal"
+                        android:text="200000"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+
+                        android:text="Eligible Students:"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="5dp"
+                        android:text="80"
+                        android:id="@+id/p_statuseligible"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <ListView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/listvucompanylist">
+
+      </ListView>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fabReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:tint="@color/TxtClr"
+        app:fabSize="normal"
+        android:src="@mipmap/report" />
+
+</RelativeLayout>

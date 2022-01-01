@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    android:background="@color/dashcolor"
+    tools:context="com.example.muralli.lifecycle.Main2Activity">
+
+    <com.google.android.material.appbar.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appbar1">
+
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:orientation="vertical"
+        android:id="@+id/lnrmain"
+      >
+        <TextView
+            android:gravity="center"
+           android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:text="User Registration"
+            android:id="@+id/regtitle"
+            android:textSize="30dp"
+
+            android:textColor="@color/TxtClr"
+            />
+
+        <EditText
+            android:id="@+id/regUserName"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:hint="User Name"
+            android:inputType="textCapWords"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"/>
+
+
+        <EditText
+            android:id="@+id/eMail"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:hint="Email Id"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"/>
+        <EditText
+            android:id="@+id/pW"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"/>
+        <EditText
+            android:id="@+id/confpW"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@color/TxtClr"
+            android:textColorHint="@color/TxtClr"/>
+
+        <CheckBox
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept Terms and Conditions"
+            android:textColor="@color/TxtClr"/>
+        <Button
+            android:id="@+id/Register"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@color/TxtClr"
+            android:text="Register"
+            android:textColor="@color/dashcolor"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/lnrmain"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:id="@+id/pbar1"
+
+        />
+
+
+
+
+
+</RelativeLayout>
